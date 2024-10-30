@@ -7,7 +7,7 @@ function Provider({ children }) {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = useCallback(async () => {
-    const response = await axios.get('http://localhost:3001/books');
+    // const response = await axios.get('http://localhost:3001/books');
 
     setBooks(response.data);
   }, []);
